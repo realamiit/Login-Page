@@ -4,6 +4,7 @@ body{
     border-radius: no repet;
     background-position: center;
     background-size: cover;
+    display: flex;
 }
 form{
     width: 60%;
@@ -29,6 +30,9 @@ margin-top: 150px;
     background-color: transparent;
     border: none;
     border: 1px solid white;
+    color: white;
+    font-size: medium;
+    padding-left: 13px;
 
 }
 
@@ -48,6 +52,28 @@ button{
     cursor: pointer;
     font-size: large;
     letter-spacing: 1px;
+    
 
 
 }
+@media (max-width: 425px) {
+    form {
+        width: 95%;
+        margin-left: 0;
+        margin-top: 30px;
+        padding: 10px;
+        height: auto;
+    }
+    .i, button {
+        width: 90%;
+        min-width: 0;
+    }
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+button:hover::before{
+    transform: scalex(1);
+    transform-origin: right;
+} 
