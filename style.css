@@ -53,6 +53,11 @@ button{
     letter-spacing: 1px;
 
 }
+
+.container{
+    border: 4px ;
+}
+
 /* phone size s */
 @media (max-width: 320px) {
     form {
@@ -79,7 +84,7 @@ button:hover::before{
  
 /* phone size M */
 
-@media (max-width: 375px) {
+@media (max-width: 365px) {
     form {
         width: 76%;
         margin-left: 0;
